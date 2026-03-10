@@ -1,0 +1,10 @@
+{
+  "name": "@chronex/security",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./rbac": "./src/rbac.ts",
+    "./crypto": "./src/crypto.ts"
+  }
+}
