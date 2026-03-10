@@ -1,0 +1,19 @@
+{
+  "name": "chronex",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "tsx --test packages/config/test/env.test.ts",
+    "check:env:api": "tsx scripts/validate-env.ts api",
+    "check:env:web": "tsx scripts/validate-env.ts web"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

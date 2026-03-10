@@ -1,0 +1,6 @@
+{
+  "name": "@chronex/api",
+  "private": true,
+  "type": "module",
+  "exports": "./src/env.ts"
+}
