@@ -1,0 +1,8 @@
+{
+  "name": "@chronex/security",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

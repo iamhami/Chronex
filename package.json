@@ -8,12 +8,16 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "tsx --test packages/config/test/env.test.ts packages/auth/test/auth.test.ts",
+    "test": "tsx --test packages/config/test/env.test.ts packages/auth/test/auth.test.ts packages/profile/test/profile.test.ts packages/security/test/security.test.ts packages/stacks/test/stacks.test.ts apps/api/test/api.test.ts",
     "check:env:api": "tsx scripts/validate-env.ts api",
     "check:env:web": "tsx scripts/validate-env.ts web"
   },
   "devDependencies": {
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "express": "^5.2.1"
   }
 }

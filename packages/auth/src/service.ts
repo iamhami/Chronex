@@ -55,10 +55,11 @@ export const rolePermissions: Record<Role, Permission[]> = {
   Creator: [
     "profile:read:self",
     "profile:write:self",
+    "creator:stack:draft:self",
     "creator:stack:publish"
   ],
   Moderator: ["profile:read:any"],
-  Admin: ["profile:read:any", "admin:roles:write"]
+  Admin: ["profile:read:any", "creator:stack:draft:any", "admin:roles:write"]
 };
 
 export class AuthService {

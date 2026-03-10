@@ -75,6 +75,7 @@ test("happy path registration and login work for Member and Creator", () => {
   assert.deepEqual(creatorRegistration.permissions, [
     "profile:read:self",
     "profile:write:self",
+    "creator:stack:draft:self",
     "creator:stack:publish"
   ]);
 });

@@ -5,7 +5,9 @@ export type RegisterableRole = Extract<Role, "Member" | "Creator">;
 export type Permission =
   | "profile:read:self"
   | "profile:write:self"
+  | "creator:stack:draft:self"
   | "creator:stack:publish"
+  | "creator:stack:draft:any"
   | "profile:read:any"
   | "admin:roles:write";
 
