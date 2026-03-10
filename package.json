@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "tsx --test packages/config/test/env.test.ts",
+    "test": "tsx --test packages/config/test/env.test.ts packages/auth/test/auth.test.ts",
     "check:env:api": "tsx scripts/validate-env.ts api",
     "check:env:web": "tsx scripts/validate-env.ts web"
   },

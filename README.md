@@ -1,14 +1,16 @@
 # Chronex
 
 Chronex starts as a small npm workspaces monorepo with separate API and web
-runtime configuration modules. The first implemented story is `S-001 Setup
-monorepo runtime config and secrets`.
+runtime configuration modules. The current baseline covers `S-001 Setup
+monorepo runtime config and secrets` and the shared auth flow primitives for
+`S-003 Build signup/login flows for Member and Creator`.
 
 ## Structure
 
 - `apps/api`: API runtime entrypoints and API-only environment contract.
 - `apps/web`: web runtime entrypoints and public environment contract.
 - `packages/config`: shared config loading, validation, and tests.
+- `packages/auth`: shared auth service, token lifecycle, and auth flow tests.
 - `docs/`: environment matrix and operational config inventory.
 
 ## Commands
